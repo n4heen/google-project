@@ -7,6 +7,8 @@ const UseGoogleSearch = (term) => {
 
     const [data, setData] = useState(null)
 
+
+
     useEffect(() => {
         const fetchData = async () => {
             fetch(
