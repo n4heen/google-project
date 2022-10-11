@@ -25,6 +25,14 @@ const SearchPage = () => {
                 </Link>
                 <div className="searchPage__headerBody">
                     <Search hideButtons />
+                    <div className="searchPage__options">
+                        <div className="searchPage__optionsLeft">
+
+                        </div>
+                        <div className="searchPage__optionsRight">
+
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="searchPage__results">
