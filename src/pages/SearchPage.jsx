@@ -17,9 +17,9 @@ const SearchPage = () => {
     const [{ term }, dispatch] = useStateValue()
 
     //LIVE API CALL
-    // const { data } = UseGoogleSearch(term)
+    const { data } = UseGoogleSearch(term)
 
-    const data = response
+    // const data = response
 
     console.log(data)
 
@@ -79,6 +79,12 @@ const SearchPage = () => {
                         data?.items.map(item => (
                             <div className="searchPage__result">
                                 <a href={item.link}>
+
+                                    {
+                                        item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                                            <img className='searchPage__resultImage' src={item.pagemap?.cse_image[0]?.src} alt="" />
+                                        )}
+
                                     {item.displayLink}
                                 </a>
 
