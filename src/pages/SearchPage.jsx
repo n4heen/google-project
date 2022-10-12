@@ -17,9 +17,9 @@ const SearchPage = () => {
     const [{ term }, dispatch] = useStateValue()
 
     //LIVE API CALL
-    const { data } = UseGoogleSearch(term)
+    // const { data } = UseGoogleSearch(term)
 
-    // const data = response
+     const data = response
 
     console.log(data)
 
